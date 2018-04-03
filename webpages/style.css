@@ -1,0 +1,166 @@
+body {
+  background-color: #3F3F3F;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  padding: 10px;
+}
+
+#login p {
+    color: white;
+  }
+
+
+/*grid properties*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-areas:
+    'week  topic topic note note res res'
+    'week  topic topic note note res res'
+    'week  topic topic note note res res';
+  grid-gap: 5px;
+}
+
+.week{
+  grid-area: week;
+  background-color: #696969;
+}
+
+.topic{
+  grid-area: topic;
+  background-color: #696969;
+}
+
+.note{
+  grid-area: note;
+  background-color: #696969;
+}
+
+.res{
+  grid-area: res;
+  background-color: #696969;
+}
+
+
+
+/*link properties*/
+a {
+      color: #669999;
+  }
+
+  a:hover{
+    cursor: pointer;
+  }
+
+  a:active {
+    color:grey;
+  }
+
+h{
+  color:white;
+  font-size: 20px;
+}
+
+#status {
+  width:100vw;
+  color: black;
+  background-color:#808080;
+  font-size: 1.5em;
+  font-family: sans-serif;
+  position: fixed;
+  text-align: center;
+  z-index: 100;
+  top: -10vh;
+  opacity: 0;
+  transition: 1s;
+  padding: 1em;
+}
+
+
+/*pages*/
+#logIn {
+  background: rgba(0,0,0,0.7);/*grid colour & opacity*/
+  width: 400px;
+  padding: 25px;
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+	margin: 10vh auto 0 auto;
+	text-align: center;
+}
+
+
+#accountForm {
+  background: rgba(0,0,0,0.7);/*grid colour & opacity*/
+  width: 410px;
+  padding: 25px;
+  grid-area: a;
+  align-self: center;
+  justify-self: center;
+  display: none;
+  margin: 10vh auto 0 auto;
+  text-align: center;
+}
+
+#app-page{
+display: none;
+}
+
+
+
+/*TextBox Style */
+.textbox {
+    height: 25px;
+    width: 275px;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: white;
+    outline:0;
+    color : white;
+    font-size: 15px;
+  }
+
+
+/*button style*/
+  .button {
+  	border-radius: 4px;
+    background-color:#696969;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+}
+
+.button1 {
+  background-color:white;
+  border-radius: 50%;
+  transition: all 0.5s;
+  border: none;
+}
+
+.button2 {
+  border-radius: 4px;
+  background-color:#696969;
+  border: none;
+  padding: 10px;
+  width: 70px;
+  transition: all 0.5s;
+}
+
+button:active{
+    background:grey;
+}
+.remove {
+  background-color: #696969;
+  border-radius: 4px;
+  color: white;
+  border:none;
+}
+
+.remove:hover{
+  color:red;
+}
